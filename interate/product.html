@@ -1,0 +1,22 @@
+<!-- product.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<body>
+    <h1>Product Details</h1>
+
+    <script>
+        // Get the value of the "id" parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        // Fetch product details based on the productId (you need to implement this)
+        // For demonstration purposes, we'll just display the product ID here
+        document.body.innerHTML += `<p>Product ID: ${productId}</p>`;
+    </script>
+</body>
+</html>
